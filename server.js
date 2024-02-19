@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'development') {
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.use(express.static(path.resolve(__dirname, './client/dist')));
+app.use(express.static(path.resolve(__dirname, './public')));
 app.use(cookieParser());
 app.use(express.json());
 app.use(helmet());
